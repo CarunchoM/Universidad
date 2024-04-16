@@ -1,0 +1,172 @@
+hr {
+	color: rgb(57, 48, 82);
+
+}
+
+legend{
+	color:rgb(179, 181, 184);
+	margin: 10px;
+	font-weight: bold;
+}
+.body {
+	font-family: system-ui;
+	background: #37536d;
+	color: white;
+	/* text-align: left; */
+  }
+.wrapper{
+	width: 960px;
+	height: 1230px;
+	margin:0 auto;
+}
+.header {
+	width: 960px;
+	height: 100px;
+	background-color: rgb(15, 55, 71);
+
+}
+.main {
+	width: 960px;
+	height: 1000px;
+	background: #37536d;
+	color: white;
+}
+.footer {
+	width: 960px;
+	height: 130px;
+	text-align: center;
+}
+
+.cabecera {
+	width: 960px;
+	height: 50px;
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color:rgb(110, 157, 197);
+}
+
+.pie {
+	width: 960px;
+	height: 50px;
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.titular {
+	width: 958px;
+	height: 48px;
+	font-family: system-ui;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background: #37536d;
+	color:rgb(153, 173, 190);
+	text-align: center;
+	padding:1px
+}
+  .formulariocontacto {
+	width: 960px;
+	height: 1000px;
+	font-family: system-ui;
+	background: #37536d;
+	/* text-align: left; */
+}
+
+.otros {
+	width: 960px;
+	height: 50px;
+	color:rgb(223, 154, 71)
+	/* padding:5px */
+
+}
+.informacion {
+	width: 960px;
+	height: 70px;
+	color:rgb(70, 85, 77)
+}
+.izquierda {
+	width: 480px;
+	height: 50px;
+	background-color: rgb(41, 70, 4);
+	color:rgb(116, 153, 119);
+	float: left;
+}
+.derecha {
+	width: 480px;
+	height: 50px;
+	background-color: rgb(85, 78, 13);
+	color:rgb(114, 136, 103);
+	float: left;
+}
+.foto {
+	width: 480px;
+	height: 480px;
+	margin-left: 5px;
+	float: left
+}
+.fcontacto {
+	width: 470px;
+	height: 480px;
+	float: left
+}
+.linea{
+	width: 960px;
+	
+}
+.ndatos {
+	width: 960px;
+	height: 300px;
+	font-family: system-ui;
+	background: #37536d;
+	/* text-align: left; */
+}
+.novedades {
+	width: 480px;
+	height: 50px;
+	background-color: rgb(189, 180, 106);
+	float: left;
+	/* padding:5px */
+}
+.descuentos {
+	width: 480px;
+	height: 50px;
+	background-color: rgb(141, 139, 102);
+	float: left;
+	/* padding:5px */
+}
+.contacto {
+	width: 195px;
+	height: 70px;
+	background-color: rgb(128, 146, 105);
+	float: left;
+	padding:5px
+}
+.rss {
+	width: 540px;
+	height: 70px;
+	background-color: rgb(208, 230, 181);
+	float: left;
+	padding:5px
+}
+
+.privacidad {
+	width: 195px;
+	height: 70px;
+	background-color: rgb(63, 105, 7);
+	float: left;
+	padding:5px
+}
+.datos {
+	width: 480px;
+	height: 300px;
+	text-decoration: none;
+	color:azure;
+	float: left
+}
+.ubicacion {
+	width: 480px;
+	height: 300px;
+	float: left
+}
+
+
+

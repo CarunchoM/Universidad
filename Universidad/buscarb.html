@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda Baja</title>
+    <link href="universidad.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="buscar.js"></script>
+</head>
+<body><div class="container">
+    <h2 class="mb-4">Buscar Alumno</h2>
+    <form action="pborrar.php" method="GET" onsubmit="return validarBusqueda()">
+        
+        <div class="form-group">
+            <label for="dni">DNI/NIF:</label>
+            <input type="text" class="form-control" id="dni" name="dni" placeholder="12345678X">
+        </div>
+        <div class="form-group">
+            <label for="celectronico">C. Electronico:</label>
+            <input type="email" class="form-control" id="celectronico" name="celectronico" placeholder="Alfredo.Fernandez@GMail.com">
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+        <a class="btn btn-primary" href="index.html">Inicio</a> 
+
+</body>
+</html>

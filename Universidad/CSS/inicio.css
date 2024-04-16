@@ -1,0 +1,399 @@
+/* RESET */
+*{
+    margin:0px;
+    padding:0px,
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+    list-style-type: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* FIN RESET */
+
+/* //
+// Import Bootstrap
+// */
+
+@import "bootstrap/scss/bootstrap";
+
+
+/* //
+// Import Bootstrap Icons w/ custom path to fonts folder
+// */
+
+$bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts";
+@import "bootstrap-icons/font/bootstrap-icons";
+
+
+/* //
+// Custom styles
+// */
+
+h1{
+
+}
+
+.wrapper{
+    margin: auto;
+    width: 960Px;
+    height: 1550px;
+    text-align: center;
+    background: rgb(0, 132, 255)
+}
+    header{
+        width: 960Px;
+        height: 225px;
+        background: rgb(0, 255, 128)
+    }
+        .cabecera{
+            width: 960Px;
+            height: 175px
+        }
+            .izdc{
+                margin: auto;
+                width: 180Px;
+                height: 175px;
+                background: rgb(0, 255, 128);
+                float: left
+            }  
+                .logo{
+                    margin: auto;
+                    width: 180Px;
+                    height: 150px;
+                    background: rgb(119, 76, 98)
+
+                }
+                .fecha{
+                    margin: auto;
+                    width: 180Px;
+                    height: 25px;
+                    background: rgb(121, 23, 48)
+
+                }
+            .centroc{
+                margin: auto;
+                width: 5090x;
+                height: 175px;
+                background: rgb(0, 255, 128);
+                float: left
+            }  
+                .titulo{
+                    margin: auto;
+                    width: 500Px;
+                    height: 125px;
+                    padding-top: 15px;
+                    color:blue;
+                    font-size: 3em;
+                    background: rgb(0, 255, 242)
+
+                }
+                .noticias{
+                    margin: auto;
+                    width: 500Px;
+                    height: 50px;
+                    background: rgb(0, 38, 255)
+
+                }
+            .dchc{
+                margin: auto;
+                width: 280Px;
+                height: 175px;
+                float: left
+            }
+                .usuario{
+                    width:280Px;
+                    height:55px
+                }
+                    .bienvenido{
+                        width:80px;
+                        height:55px;
+                        padding-top: 15px;
+                        color: rgb(80, 60, 4);
+                        background: rgb(255, 187, 0);
+                        float: left
+                    }
+                    .login{
+                        width: 200Px;
+                        height: 55px;
+                        padding-top: 15px;
+                        background: rgb(208, 255, 0);
+                        float: left
+                    }
+                .cesta{
+                    width:280px;
+                    height: 75px;
+                    background: rgb(0, 255, 128)
+                }
+                    .logocesta{
+                        width:170px;
+                        height:75px;
+                        padding-top: 30px;
+                        background: rgb(255, 0, 149);
+                        float:left
+
+                    }
+                    .articuloscesta{
+                        width:110px;
+                        height:75px;
+                        padding-top: 30px;
+                        background: rgb(238, 255, 0);
+                        float:left
+                    }
+                .busqueda{
+                    width: 280Px;
+                    height: 45px;
+                    padding-top: 10px;
+                    background: rgb(6, 80, 43)
+                }
+
+        #principal{
+            width: 960Px;
+            height: 50px;
+            padding:0px;
+            margin: 0px;
+            background: rgb(0, 132, 255);
+            list-style-type: none   
+        }
+            #principal li{
+                float: left
+            }
+            #principal li a{
+                font-family: Arial, Helvetica, sans-serif;
+                display:block;
+                font-size: 16px;
+                text-decoration: none;
+                padding: 7px 20px;
+                background-color: rgb(0, 132, 255);
+                color:aliceblue;
+                height: 20px
+            }
+            #principal li ul{
+                position: absolute;
+                display: none;
+                list-style-type: none
+            }
+            #principal li ul li{
+    
+                position:relative
+            }
+            #principal li ul li ul{
+                display: none;
+                right: 140px;
+                top: 200px;
+            }
+             
+            #principal li:hover{
+                position: relative;
+            }
+            #principal li a:hover{
+                position: relative;
+                background: blue ;
+            }
+            #principal li:hover ul{
+                position: absolute;
+                left:0px;
+                top: 33px;
+                padding: 0px;
+                display: block;
+            }
+            #principal li:hover ul li a{
+                font-size: 15px;
+                width: 150px;
+                padding: 2px;
+                display: block;
+                text-indent: 10px;
+                background: rgb(73, 119, 172) ;
+            } 
+            #principal li:hover ul li a:hover{
+                background: rgb(87, 87, 216) ;
+            }
+                .menu{
+                    width: 960Px;
+                    height: 50px;
+                    background: rgb(0, 132, 255);
+                }
+                    .hombres{
+
+                    }
+                    .mujeres{
+
+                    }
+                    .adolescentes{
+
+                    }
+                    .niños{
+
+                    }
+                    .especiales{
+
+                    }
+                    .ofertas{
+
+                    }
+                    .outlet{
+                        
+                    }
+    main{
+        margin: auto;
+        width: 960Px;
+        height: 1200px;
+        background: rgb(255, 0, 21);
+
+    }
+        .informacion{
+
+        }
+        .varios{
+        
+        }
+        
+        .galeria-1{
+        
+        }
+        .novedades{
+        
+        }
+        .promociones{
+        
+        }
+        .galeria-2{
+        
+        }
+        .descuentos{
+        
+        }
+    footer{
+        margin: auto;
+        width: 960Px;
+        height: 125px;
+        background: rgb(224, 222, 50);
+
+    }
+        .pie{
+            /* width: 960px;
+            height: 125px; */
+
+        }
+            .izdp{
+                width: 200px;
+                height:125px ;
+                
+                background-color: rgb(178, 178, 230);
+                float:left;
+            }
+                .copyright{
+                    width: 200px;
+                    height:55px ;
+                    background-color: rgb(153, 69, 101);
+
+                }
+                .condiciones{
+                    width: 200x;
+                    height:70px ;
+                    background-color: rgb(167, 133, 146);
+                }
+            .centrop{
+                width: 560px;
+                height:125px ;
+                background-color: rgb(69, 69, 153);
+                float:left;
+
+            }
+                .rss{
+                    width: 560px;
+                    height:90px ;
+                    background-color: rgb(49, 148, 82);
+
+                }
+                .contacto{
+                    width: 560px;
+                    height:35px ;
+                    background-color: rgb(106, 148, 120);
+
+                }   
+
+            .dchp{
+                width: 200px;
+                height:125px ;
+                background-color: blue;
+                float:left;
+            }
+                .cookies{
+                    width: 200px;
+                    height:55px ;
+                    background-color: rgb(36, 36, 126);
+    
+                }
+                .privacidad{
+                    width: 200px;
+                    height:70px ;
+                    background-color: rgb(113, 113, 145);
+    
+                }
+            
+
+
+
+
+
+
+
+
+.nhombre{}
+.datos{
+
+}
+.acercade{
+
+}
+
+
+/* #principal a:link, #principal a:visited, #principal a:active{
+    font-size: 20px;
+    color: blue;
+    border-bottom: 3 px red solid;
+    padding: 0px;
+    text-decoration: none;  
+} */
+

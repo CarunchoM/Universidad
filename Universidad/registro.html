@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Formulario Alumno</title>
+    <link href="universidad.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="validacion.js"></script>
+</head>
+<body><div class="container">
+    <h2 class="mb-4">Agregar Alumno</h2>
+    <form action="registro.php" method="POST" onsubmit="return validarFormulario()">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="apellido1">Primer Apellido:</label>
+            <input type="text" class="form-control" id="apellido1" name="apellido1" placeholder="1º Apellido" required>
+        </div>
+        <div class="form-group">
+            <label for="apellido2">Segundo Apellido:</label>
+            <input type="text" class="form-control" id="apellido2" name="apellido2" placeholder="2º Apellido" required>
+        </div>
+        <div class="form-group">
+            <label for="dni">DNI/NIF:</label>
+            <input type="text" class="form-control" id="dni" name="dni" placeholder="12345678X" required>
+        </div>
+        <div class="form-group">
+            <label for="celectronico">C. Electronico:</label>
+            <input type="email" class="form-control" id="celectronico" name="celectronico" placeholder="Alfredo.Fernandez@GMail.com" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="654365421" required>
+        </div>
+        <div class="form-group">
+            <label for="fnacimiento">Teléfono:</label>
+            <input type="date" class="form-control" id="fnacimiento" name="fnacimiento" placeholder="DD/MM/AAAA" required>
+        </div>
+        <div class="form-group">
+            <label>Sexo:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexo_masculino" value="masculino" required>
+                <label class="form-check-label" for="sexo_masculino">Masculino</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexo_femenino" value="femenino" required>
+                <label class="form-check-label" for="sexo_femenino">Femenino</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexo_otro" value="otro" required>
+                <label class="form-check-label" for="sexo_otro">Otro</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="facultad">Facultad:</label>
+            <select class="form-control" id="facultad" name="facultad" required>
+                <option value="Filologia">Filologia</option>
+                <option value="Derecho">Derecho</option>
+                <option value="Historia">Historia</option>
+                <option value="Geografia">Geografia</option>
+                <option value="Interpretacion">Interpretacion</option>
+                <option value="Matematicas">Matematicas</option>
+                <option value="Fisicas">Fisicas</option>
+                <option value="Quimicas">Quimicas</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary">Registrar</button>
+        <a class="btn btn-primary" href="index.html">Inicio</a> 
+    <!-- <h2>Agregar Alumno</h2>
+    <form id="formularioAlumno">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="apellido1">1º Apellido:</label>
+        <input type="text" id="apellido1" name="apellido1" required><br><br>
+        <label for="apellido2">2º Apellido:</label>
+        <input type="text" id="apellido2" name="apellido2" required><br><br>
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required><br><br>
+        <label for="celectronico">C. Electronico:</label>
+        <input type="email" id="celectronico" name="celectronico" required><br><br>
+        <label for="fnacimiento">F. Nacimiento:</label>
+        <input type="date" id="fnacimiento" name="fnacimiento" required><br><br>
+        <label for="sexo">Sexo:</label>
+        <input type="text" id="sexo" name="sexo" required><br><br>
+        <label for="facultad">Facultad:</label>
+        <input type="text" id="facultad" name="facultad" required><br><br>
+       
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script>
+        document.getElementById('formularioAlumno').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Envía datos del formulario al backend usando AJAX
+            const formData = new FormData(this);
+
+            fetch('crear.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data); // Muestra mensaje del servidor
+                // Puedes redirigir o realizar otras acciones después de guardar
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script> -->
+</body>
+</html>
